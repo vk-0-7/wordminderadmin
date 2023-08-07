@@ -7,6 +7,7 @@ import Result from "@/components/result";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import HashLoader from "react-spinners/HashLoader";
+import { BASE_URL } from "@/Apis/api";
 
 const ansArry: any = [];
 
@@ -40,7 +41,7 @@ const QuizPage = () => {
 
   const sendQuestions = () => {
     try {
-      axios.get("http://localhost:9000/getQuestions").then((res) => {
+      axios.get( `${BASE_URL}getQuestions`).then((res) => {
         // console.log(res.data);
         setData(res.data[res.data.length - 1]);
         setLoading(false)

@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import styles from "../styles/creator.module.css";
 import axios from "axios";
+import { BASE_URL } from "@/Apis/api";
 
 let questionarray: any = [];
 let option1arr: any = [];
@@ -49,7 +50,7 @@ const Creator = () => {
   const sendQuestions = () => {
     try {
       axios
-        .post("http://localhost:9000/createQuestions", { data: questions })
+        .post(`${BASE_URL}createQuestions`, { data: questions })
         .then((res) => {
           //   console.log(res);
           //  setQuestions({
