@@ -88,3 +88,51 @@
 
 }
 
+@media(max-width:1300px){
+
+}
+
+@media(max-width:700px){
+    .full_page{
+       
+        padding: 5vh 5vw;
+       
+    }
+    .number_section{
+        /* border: 1px solid red; */
+        padding: 10vh 1vw;
+        
+    }
+    .number_section button{
+        font-size: 20px;
+        padding: 1vh 1.5vw;
+        
+       
+    
+    }
+    .quiz_body{
+        /* border: 1px solid red; */
+        padding: 10vh 5vw;
+        padding-top: 3vh;
+       
+    }
+    
+    .quiz_body h1{
+       
+        font-size: 25px;
+    }
+    
+   
+    .option_div >h4{
+        
+        font-size: 16px;
+        padding: 1.5vh 2vw;
+       
+    
+    }
+    .submit{
+        height: 35px;
+        width: 20vw;
+       
+    }
+}
