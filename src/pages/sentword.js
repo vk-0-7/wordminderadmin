@@ -5,6 +5,7 @@ import Content from "@/components/content";
 import Datacard from "@/components/datacard";
 import Data from "../Data/data.json";
 import axios from "axios";
+import { BASE_URL } from "@/Apis/api";
 
 const SentWord = () => {
 
