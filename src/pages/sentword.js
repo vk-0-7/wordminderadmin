@@ -17,7 +17,7 @@ const SentWord = () => {
   
   const getsentData = () => {
     try {
-      axios.get(`${BASE_URL}/getallsentword`).then((res) => {
+      axios.get(`${BASE_URL}getallsentword`).then((res) => {
         console.log(res.data);
         setsentData(res.data);
     });
