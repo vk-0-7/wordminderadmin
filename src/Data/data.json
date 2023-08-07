@@ -1,0 +1,163 @@
+[
+    {
+      "id": 1,
+      "word": "Abundant",
+      "meaning": "Present in great quantity; plentiful.",
+      "antonym": "Scarce",
+      "synonym": "Ample",
+      "example": "The garden is abundant with colorful flowers."
+    },
+    {
+      "id": 2,
+      "word": "Benevolent",
+      "meaning": "Kind and generous.",
+      "antonym": "Malevolent",
+      "synonym": "Generous",
+      "example": "The benevolent stranger donated money to the charity."
+    },
+    {
+      "id": 3,
+      "word": "Capricious",
+      "meaning": "Given to sudden and unaccountable changes of mood or behavior.",
+      "antonym": "Consistent",
+      "synonym": "Whimsical",
+      "example": "Her capricious nature made it difficult to predict her reactions."
+    },
+    {
+      "id": 4,
+      "word": "Diligent",
+      "meaning": "Showing careful and persistent effort.",
+      "antonym": "Lazy",
+      "synonym": "Industrious",
+      "example": "The diligent student studied for hours every day."
+    },
+    {
+      "id": 5,
+      "word": "Eloquent",
+      "meaning": "Fluent or persuasive in speaking or writing.",
+      "antonym": "Inarticulate",
+      "synonym": "Articulate",
+      "example": "The politician delivered an eloquent speech that moved the audience."
+    },
+    {
+      "id": 6,
+      "word": "Formidable",
+      "meaning": "Inspiring fear or respect through being impressively powerful or capable.",
+      "antonym": "Easy",
+      "synonym": "Daunting",
+      "example": "The team faced a formidable opponent in the championship match."
+    },
+    {
+      "id": 7,
+      "word": "Gregarious",
+      "meaning": "Fond of company; sociable.",
+      "antonym": "Introverted",
+      "synonym": "Sociable",
+      "example": "John is a gregarious person who enjoys attending parties."
+    },
+    {
+      "id": 8,
+      "word": "Hypothetical",
+      "meaning": "Based on or serving as a hypothesis; assumed or supposed.",
+      "antonym": "Actual",
+      "synonym": "Speculative",
+      "example": "Let's consider a hypothetical situation where money is no object."
+    },
+    {
+      "id": 9,
+      "word": "Impartial",
+      "meaning": "Treating all parties equally; fair and just.",
+      "antonym": "Biased",
+      "synonym": "Unbiased",
+      "example": "The judge remained impartial throughout the trial."
+    },
+    {
+      "id": 10,
+      "word": "Jovial",
+      "meaning": "Cheerful and friendly.",
+      "antonym": "Gloomy",
+      "synonym": "Merry",
+      "example": "The jovial host greeted each guest with a warm smile."
+    },
+    {
+      "id": 11,
+      "word": "Keen",
+      "meaning": "Having or showing eagerness or enthusiasm.",
+      "antonym": "Indifferent",
+      "synonym": "Enthusiastic",
+      "example": "She has a keen interest in photography."
+    },
+    {
+      "id": 12,
+      "word": "Lucid",
+      "meaning": "Clear and easily understood; rational and sane.",
+      "antonym": "Confused",
+      "synonym": "Clear",
+      "example": "The professor gave a lucid explanation of the complex topic."
+    },
+    {
+      "id": 13,
+      "word": "Meticulous",
+      "meaning": "Showing great attention to detail; thorough.",
+      "antonym": "Careless",
+      "synonym": "Precise",
+      "example": "The artist's meticulous brushstrokes brought the painting to life."
+    },
+    {
+      "id": 14,
+      "word": "Novel",
+      "meaning": "New, original, and different from what has been known before.",
+      "antonym": "Familiar",
+      "synonym": "Innovative",
+      "example": "The author's novel approach to storytelling captivated readers."
+    },
+    {
+      "id": 15,
+      "word": "Obsolete",
+      "meaning": "No longer in use or outdated.",
+      "antonym": "Current",
+      "synonym": "Outdated",
+      "example": "The old typewriter became obsolete with the advent of computers."
+    },
+    {
+      "id": 16,
+      "word": "Pensive",
+      "meaning": "Engaged in deep or serious thought.",
+      "antonym": "Carefree",
+      "synonym": "Thoughtful",
+      "example": "The pensive student stared out the window, contemplating the question."
+    },
+    {
+      "id": 17,
+      "word": "Quaint",
+      "meaning": "Attractively unusual or old-fashioned.",
+      "antonym": "Modern",
+      "synonym": "Charming",
+      "example": "The village was known for its quaint cottages and narrow streets."
+    },
+    {
+      "id": 18,
+      "word": "Resilient",
+      "meaning": "Able to withstand or recover quickly from difficult conditions.",
+      "antonym": "Fragile",
+      "synonym": "Strong",
+      "example": "Despite setbacks, she remained resilient and continued pursuing her goals."
+    },
+    {
+      "id": 19,
+      "word": "Serene",
+      "meaning": "Calm, peaceful, and untroubled.",
+      "antonym": "Chaotic",
+      "synonym": "Tranquil",
+      "example": "The serene lake provided a perfect spot for meditation."
+    },
+    {
+      "id": 20,
+      "word": "Tenacious",
+      "meaning": "Persistent and determined to hold on or achieve something.",
+      "antonym": "Weak",
+      "synonym": "Persistent",
+      "example": "The tenacious climber reached the mountain summit against all odds."
+
+    }]
+  

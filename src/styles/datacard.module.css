@@ -1,0 +1,18 @@
+.card_box{
+    /* border: 1px solid rgb(36, 35, 35); */
+    height: fit-content;
+    display: grid;
+    gap: 20px;
+    /* overflow-y: auto; */
+    
+}
+
+.datacard{
+    /* border: 1px solid black; */
+    border-radius: 12px;
+    padding: 1.5vh 1vw;
+    background-color: rgb(180, 177, 177);
+}
+.datacard h5{
+    text-align: right;
+}

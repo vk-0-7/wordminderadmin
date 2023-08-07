@@ -1,0 +1,9 @@
+.content_main{
+    height: fit-content;
+    min-height: 95vh;
+    height: fit-content;
+    background-color: rgb(138, 136, 132);
+    border-radius: 15px;
+    box-shadow: 0.5px 0.5px 3px black;
+    padding: 2vh 1vw;
+}

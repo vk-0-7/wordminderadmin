@@ -1,0 +1,85 @@
+.card_box{
+    /* border: 1px solid rgb(36, 35, 35); */
+    height: fit-content;
+    display: grid;
+    gap: 20px;
+    /* overflow-y: auto; */
+    
+}
+.questionCard{
+    border-radius: 12px;
+    padding: 1.5vh 1vw;
+    background-color: rgb(180, 177, 177);
+}
+
+.questionCard >span{
+    display: flex;
+    
+}
+.questionCard >span >input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 15px;
+    font-size: 15px;
+    margin-inline: 4vw 5vw;
+    margin-bottom: 1vh;
+}
+.questionCard input::placeholder{
+    color: rgb(155, 153, 153);
+}
+
+.options{
+    padding: 1vh 10vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 20px;
+    column-gap: 20vw;
+}
+.options >input{
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding-inline: 15px;
+    font-size: 15px;
+}
+.options >input:focus{
+    outline: none;
+}
+.answer_section{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    gap: 10px;
+}
+.answer_input {
+    height: 38px;
+    
+}
+.answer_section input{
+    height: 100%;
+    width: 100%;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding-left: 10px;
+}
+
+.btn{
+    height: 40px;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    /* background-color: rgb(44, 42, 42); */
+}
+.btn >button{
+    height: 100%;
+    width: 20%;
+    border-radius: 10px;
+    border: 1px solid rgb(118, 113, 113);
+    cursor: pointer;
+    font-size: 15px;
+    background-color: black;
+    color: white;
+}
