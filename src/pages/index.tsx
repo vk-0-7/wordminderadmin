@@ -26,13 +26,17 @@ const Index = () => {
       router.push("/alldata");
     } else {
       try {
-        axios.get(`${BASE_URL}getsubscriber?email=${email}`,).then((res) => {
-          console.log(res);
+        axios.get(`${BASE__URL}getsubscriber?email=${email}`,).then((res) => {
+          console.log('response',res);
+          if(res.status==200)
           router.push('/quizPage')
+         else{
+          toast.error("You need to Subscibe First");
+         }
         });
       } catch (error) {
-        console.error(error);
-        toast.error("You need to Subscibe First");
+        console.error('you need to subscribe',error);
+        
       }
     }
   };
