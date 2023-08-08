@@ -26,7 +26,7 @@ const Index = () => {
       router.push("/alldata");
     } else {
       try {
-        axios.get(`${BASE_URL}getsubscriber`).then((res) => {
+        axios.get(`${BASE_URL}getsubscriber?email=${email}`,).then((res) => {
           console.log(res);
           router.push('/quizPage')
         });
@@ -60,6 +60,13 @@ const Index = () => {
           <button onClick={checkSubscribers}> Enter </button>
         </div>
       </div>
+    
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        theme="dark"
+      />
     </>
   );
 };
