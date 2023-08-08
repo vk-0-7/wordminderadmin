@@ -5,12 +5,16 @@ import Content from "@/components/content";
 import { useRouter } from "next/router";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import CircularProgress from '@mui/joy/CircularProgress';
+
 import axios from "axios";
 import { BASE_URL, BASE__URL } from "@/Apis/api";
+
 
 const Index = () => {
   const router = useRouter();
   const [email, setEmail] = useState<string>("");
+  const [isbtnLoading, setIsBtnLoading] = useState<Boolean>(false);
 
   const handleName = (e: any) => {
     setEmail(e.target.value);
@@ -22,11 +26,13 @@ const Index = () => {
   // }
 
   const checkSubscribers = () => {
+    setIsBtnLoading(true)
     if (email == "admin123@gmail.com") {
       router.push("/alldata");
     } else {
       try {
-        axios.get(`${BASE__URL}getsubscriber?email=${email}`,).then((res) => {
+        axios.get(`${BASE_URL}getsubscriber?email=${email}`,).then((res) => {
+          setIsBtnLoading(false)
           console.log('response',res);
           if(res.status==200)
           router.push('/quizPage')
@@ -36,6 +42,7 @@ const Index = () => {
         });
       } catch (error) {
         console.error('you need to subscribe',error);
+        setIsBtnLoading(false)
         
       }
     }
@@ -61,7 +68,11 @@ const Index = () => {
             value={email}
             onChange={handleName}
           />
-          <button onClick={checkSubscribers}> Enter </button>
+          <button onClick={checkSubscribers}> 
+           {
+            isbtnLoading ?  <CircularProgress size="sm" /> : <span>Enter</span> 
+           }
+           </button>
         </div>
       </div>
     

@@ -1,28 +1,27 @@
-import {useEffect,useState} from "react";
-import Sidebar from "@/components/sidebar";
-import styles from "../styles/sentword.module.css";
+import React from 'react'
 import Content from "@/components/content";
 import Datacard from "@/components/datacard";
-import Data from "../Data/data.json";
+import styles from "../styles/sentword.module.css";
+import {useEffect,useState} from "react";
+import Sidebar from "@/components/sidebar";
 import axios from "axios";
 import { BASE_URL } from "@/Apis/api";
-import HashLoader from "react-spinners/HashLoader";
 
-const SentWord = () => {
-
-  const [sentData,setsentData]=useState([]);
-  const [isLoading,setisLoading]=useState(false)
+const Subscribers = () => {
+  
+    const [isLoading,setisLoading]=useState<Boolean>(false)
+    const [Data,setData]=useState([]);
 
   useEffect(() => {
     getsentData()
   }, [])
   
   const getsentData = () => {
-     setisLoading(true)
+    setisLoading(true)
     try {
-      axios.get(`${BASE_URL}getallsentword`).then((res) => {
+      axios.get(`${BASE_URL}getallsubscriber`).then((res) => {
         console.log(res.data);
-        setsentData(res.data);
+        setData(res.data);
         setisLoading(false)
     });
     } catch (error) {
@@ -32,7 +31,6 @@ const SentWord = () => {
    
   };
 
- 
 
   return (
     <div className={styles.static_bg}>
@@ -40,11 +38,11 @@ const SentWord = () => {
       {/* <Content> */}
       <div className={styles.content}>
         {" "}
-        <Datacard data={sentData} isLoading={isLoading}/>{" "}
+        <Datacard data={Data} isLoading={isLoading} toDisplay={'subscribers'}/>{" "}
       </div>
       {/* </Content> */}
     </div>
-  );
-};
+  )
+}
 
-export default SentWord;
+export default Subscribers

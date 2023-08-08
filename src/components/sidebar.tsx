@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/sidebar.module.css";
 import { FiLogOut } from "react-icons/fi";
 import { BsDatabaseFill, BsCollectionFill } from "react-icons/bs";
+import {FaUsers} from 'react-icons/fa'
 import { IoIosCreate } from "react-icons/io";
 import Link from "next/link";
 import { useRouter } from "next/router";
@@ -23,15 +24,19 @@ const Sidebar = () => {
           {" "}
           <IoIosCreate />{" "}
         </span>
+        <span onClick={()=>router.push("/subscribers")} >
+          {" "}
+          <FaUsers />{" "}
+        </span>
         {/* <span> <FiLogOut/> </span> */}
         {/* <span> <FiLogOut/> </span> */}
       </div>
-      <div className={styles.logout}>
+      {/* <div className={styles.logout}>
         <span>
           {" "}
           <FiLogOut />{" "}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -15,3 +15,12 @@ body {
   overflow-x: hidden;
 }
 
+
+.spinner_new{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(142, 135, 135, 0.63);
+  display:grid;
+  place-items: center;
+
+}

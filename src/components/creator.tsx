@@ -2,6 +2,9 @@ import { useState, useEffect } from "react";
 import styles from "../styles/creator.module.css";
 import axios from "axios";
 import { BASE_URL } from "@/Apis/api";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import CircularProgress from '@mui/joy/CircularProgress';
 
 let questionarray: any = [];
 let option1arr: any = [];
@@ -12,6 +15,7 @@ let ansarr: any = [];
 
 const Creator = () => {
   const arry = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  const [isbtnLoading, setIsBtnLoading] = useState<Boolean>(false);
 
   const [questions, setQuestions] = useState<any>({
     question: [],
@@ -48,21 +52,18 @@ const Creator = () => {
   };
 
   const sendQuestions = () => {
+    setIsBtnLoading(true)
     try {
       axios
         .post(`${BASE_URL}createQuestions`, { data: questions })
         .then((res) => {
-          //   console.log(res);
-          //  setQuestions({
-          //     question: [""],
-          //     option1: [""],
-          //     option2: [""],
-          //     option3: [""],
-          //     option4: [""],
-          //  })
+           toast.success("Questions Added")
+           setIsBtnLoading(false)
         });
     } catch (error) {
       console.error(error);
+      toast.error('Error Adding Questions')
+      setIsBtnLoading(false)
     }
   };
 
@@ -129,9 +130,17 @@ const Creator = () => {
         </div>
         <div className={styles.btn}>
           {" "}
-          <button onClick={sendQuestions}>Submit</button>{" "}
+          <button onClick={sendQuestions}> {
+            isbtnLoading ?  <CircularProgress size="sm" /> : <span>Submit</span> 
+           }</button>{" "}
         </div>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={3000}
+        hideProgressBar={false}
+        theme="dark"
+      />
     </>
   );
 };
