@@ -3,19 +3,39 @@ import styles from "../styles/Home.module.css";
 import Sidebar from "../components/sidebar";
 import Content from "@/components/content";
 import { useRouter } from "next/router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import axios from "axios";
+import { BASE_URL, BASE__URL } from "@/Apis/api";
 
 const Index = () => {
-  const router=useRouter();
-  const [name, setName] = useState<string>("");
+  const router = useRouter();
+  const [email, setEmail] = useState<string>("");
 
   const handleName = (e: any) => {
-    setName(e.target.value);
+    setEmail(e.target.value);
   };
 
-  const handleEnter=()=>{
-    name==='admin123' ?router.push('/alldata') : router.push('/quizPage')
+  // const handleEnter=()=>{
+  //   name==='admin123' ?router.push('/alldata') : router.push('/quizPage')
 
-  }
+  // }
+
+  const checkSubscribers = () => {
+    if (email == "admin123@gmail.com") {
+      router.push("/alldata");
+    } else {
+      try {
+        axios.get(`${BASE_URL}getsubscriber`).then((res) => {
+          console.log(res);
+          router.push('/quizPage')
+        });
+      } catch (error) {
+        console.error(error);
+        toast.error("You need to Subscibe First");
+      }
+    }
+  };
 
   return (
     // <div className={styles.static_bg}>
@@ -33,11 +53,11 @@ const Index = () => {
           <h2>Login</h2>
           <input
             type="text"
-            placeholder="Enter your name"
-            value={name}
+            placeholder="Enter your email"
+            value={email}
             onChange={handleName}
-          /> 
-          <button onClick={handleEnter} > Enter </button>
+          />
+          <button onClick={checkSubscribers}> Enter </button>
         </div>
       </div>
     </>
