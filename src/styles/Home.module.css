@@ -55,19 +55,19 @@
 
 @media(max-width:1000px){
     .login_box{
-        height: 40vh;
-        width: 80vw;
+        height: 35vh;
+        width: 90vw;
         
        
     }
     .login_box input{
         height: 40px;
-        width: 80%;
+        width: 90%;
        
     }
     .login_box button{
         height: 40px;
-        width: 30vw;
+        width: 90%;
        
     }
 }

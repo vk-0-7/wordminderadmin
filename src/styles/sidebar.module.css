@@ -32,7 +32,7 @@
 }
 
 
-/* .logout >span{
+.logout >span{
     font-size: 30px;
     background-color: grey;
     border-radius: 10px;
@@ -44,19 +44,20 @@
 }
 .logout > span:hover{
     background-color: rgb(43, 41, 41);
+    color: white;
    
-} */
+}
 
 @media(max-width:700px){
     .sidebar_main{
         height: 100%;
         /* width: 7vw; */
-        padding: 1vh 1vw;
+        padding: 1vh 2vw;
         
         position: relative;
         display: flex;
         flex-direction: row;
-        justify-content: center;
+        justify-content: flex-start;
     }
     .main_container{
        /* border: 1px solid red; */
@@ -70,6 +71,19 @@
         background-color: grey;
         border-radius: 10px;
         
+        padding-block: 10px;
+        padding-inline: 10px;
+    }
+    .logout >span{
+        font-size: 22px;
+        background-color: grey;
+        border-radius: 10px;
+        cursor: pointer;
+        position: absolute;
+        right: 2vw;
+        display: grid;
+        place-items: center;
+        height: fit-content;
         padding-block: 10px;
         padding-inline: 10px;
     }

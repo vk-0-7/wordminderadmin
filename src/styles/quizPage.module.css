@@ -78,7 +78,7 @@
     height: 40px;
     width: 12vw;
     margin-bottom: 5vh;
-   
+    cursor: pointer;
     border: 1px solid black;
     border-radius: 10px;
     font-size: 15px;
@@ -94,18 +94,26 @@
 
 @media(max-width:700px){
     .full_page{
-       
+        width: 100vw;
+        display: grid;
+       grid-template-rows: 1fr 10fr;
         padding: 5vh 5vw;
        
     }
     .number_section{
+        width: 100%;
+        overflow-x: auto;
         /* border: 1px solid red; */
-        padding: 10vh 1vw;
+        padding: 1vh 1vw;
+        display: grid;
+        grid-template-rows:none;
+        grid-template-columns: repeat(10,1fr);
         
     }
     .number_section button{
         font-size: 20px;
-        padding: 1vh 1.5vw;
+        padding: 1.5vh 2vw;
+        width: 35px;
         
        
     

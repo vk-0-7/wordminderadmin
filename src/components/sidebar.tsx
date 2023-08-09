@@ -31,12 +31,12 @@ const Sidebar = () => {
         {/* <span> <FiLogOut/> </span> */}
         {/* <span> <FiLogOut/> </span> */}
       </div>
-      {/* <div className={styles.logout}>
-        <span>
+      <div className={styles.logout}>
+        <span onClick={()=>router.push("/")}>
           {" "}
           <FiLogOut />{" "}
         </span>
-      </div> */}
+      </div>
     </div>
   );
 };

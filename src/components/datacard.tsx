@@ -55,7 +55,7 @@ const Datacard = ({ data,isLoading, toDisplay }: Props) => {
            return (
              <div key={ind} className={styles.datacard}>
                
-                <h3>{val.email}</h3>
+                <h3>{ind+1} {" )"}  {val.email}</h3>
              </div>
            );
          })}
@@ -65,6 +65,7 @@ const Datacard = ({ data,isLoading, toDisplay }: Props) => {
           {data.map((val: any, ind: any) => {
             return (
               <div key={ind} className={styles.datacard}>
+                 <h3> {ind+1} </h3>
                 {val.createdAt ? <h5> {getDate(val.createdAt)} </h5> : ""}
                 <h2> word : {val.word}</h2>
                 <h3> Meaning : {val.meaning}</h3>
