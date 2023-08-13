@@ -73,6 +73,9 @@ const Index = () => {
             isbtnLoading ?  <CircularProgress size="sm" /> : <span>Enter</span> 
            }
            </button>
+           <div>
+             
+           </div>
         </div>
       </div>
     
